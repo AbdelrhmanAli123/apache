@@ -23,5 +23,10 @@
 ### 8 - create you project dir, if you will create your project directory under /var/www it will work without any problem but if you want to change the path of the dir and not under /var/www the SElinux will prevent you so if you wanna avoid this problem you can give the same context of apache to the path of your project directory using the following command 
       sudo chcon -R --reference=/var/www/html /path/to/new_directory
       
-
+### 9 - change your local DNS and add the name of your website along with the ip of your machine,
+     sudo vim /etc/hosts
+     
+### 10 - restert the services (apache - network-manager)
+     sudo systemctl restart httpd.service
+     sudo systemctl restart network-manager
 
