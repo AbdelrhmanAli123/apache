@@ -1,7 +1,7 @@
 # apache
 #How to host multiple websites on the same machine
 
-### 1 - first of all you need to luach your instance and make sure that the securty group is configured correctly you can do the same thing on your local machine:
+### 1 - first of all you need to launch your instance and make sure that the securty group is configured correctly you can do the same thing on your local machine:
 
 ### 2 - install apache on your centos machine using the following command :
         sudo yum -y install httpd
@@ -18,7 +18,7 @@
       sudo etc/httpd/conf.d/01-VirtualHost.conf
       
 ### 7 - file configuration
-      check the Virtaual host configuration file
+      check the Virtual host configuration file
       
 ### 8 - create you project dir, if you will create your project directory under /var/www it will work without any problem but if you want to change the path of the dir and not under /var/www the SElinux will prevent you so if you wanna avoid this problem you can give the same context of apache to the path of your project directory using the following command 
       sudo chcon -R --reference=/var/www/html /path/to/new_directory
