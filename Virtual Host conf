@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+    ServerName www.yourdomain.com
+    ServerAlias yourdomain.com
+    DocumentRoot /addThePath/to/yourProjectDir
+    CustomLog "logs/default-yourdomain.log combined
+</VirtualHost>
+
+<Directory /addThePath/to/yourProjectDir>
+    Options FollowSymLinks
+    AllosOverride None
+    Require all granted
+</Directory>
+
