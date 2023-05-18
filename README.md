@@ -17,7 +17,7 @@
 ### 6 - configure the virtual host file using this pass /etc/httpd/canf.d you can name the file any name you want but you should end the file with this extension (.conf) to allow the globel file reads your virtual Host file
       sudo etc/httpd/conf.d/01-VirtualHost.conf
       
-### 7 - file configuration
+### 7 - Virtual Host configuration
       check the Virtual host configuration file
       
 ### 8 - create you project dir, if you will create your project directory under /var/www it will work without any problem but if you want to change the path of the dir and not under /var/www the SElinux will prevent you so if you wanna avoid this problem you can give the same context of apache to the path of your project directory using the following command 
